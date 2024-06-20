@@ -16,6 +16,5 @@ const Container = styled.div`
     height: 100vh;
     overflow-x: hidden;
     position: sticky;
-
 `
 export default Layout

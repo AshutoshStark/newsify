@@ -114,6 +114,9 @@ font-size: 3rem;
 display: flex;
 gap: 1rem;
 align-items: center;
+@media screen and (max-width: 900px) {
+  font-size: 1.5rem;
+}
 select{
     color: #faf9f9;
     width: 20vw;
@@ -130,6 +133,11 @@ select{
     font-size: 1rem;
     display: flex;
     align-items: center;
+    @media screen and (max-width: 900px) {
+      width: 25vw;
+      font-size: 10px;
+      padding: 10px;
+    }
 }
 option{
     width: 20vw;
@@ -146,6 +154,11 @@ option{
     border: none;
     color: white;
     font-size: 1rem;
+    @media screen and (max-width: 900px) {
+      width: 25vw;
+      font-size: 10px;
+      padding: 10px;
+    }
 }
 `
 

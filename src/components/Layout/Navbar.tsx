@@ -15,23 +15,17 @@ const Navbar = () => {
            <Link to={'/'} className={pathname === '/' ? "activeLink" : "notActiveLink"}>
             Home
            </Link>
-           <Link to={'/search'} className={pathname.includes('album') ? "activeLink" : "notActiveLink"}>
-            Search
-           </Link> 
         </nav>
     </MainDiv>
   )
 }
 
-const Heading = styled.h1`
+export const Heading = styled.h1`
   color: #b9e202;
   margin: 1rem;
-  @media screen and (max-width: 900px) {
-    display: none;
-  }
 `
 
-const MainDiv = styled.div`
+export const MainDiv = styled.div`
 height: 10vh;
 width: 100vw;
 display: flex;
@@ -39,7 +33,6 @@ align-items: center;
 border-bottom: solid #b9e202 1px;
 @media screen and (max-width: 900px) {
   overflow: hidden;
-  justify-content: space-around;
   }
 nav{
   width: 80vw;
@@ -47,8 +40,9 @@ nav{
   justify-content: center;
   gap: 2rem;
   @media screen and (max-width: 900px) {
-    width: 60vw;
-    gap: 1rem;
+    gap: 0;
+    align-items: center;
+    width: 40vw;
   }
 }
 a{

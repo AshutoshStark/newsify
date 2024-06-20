@@ -1,6 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import Search from "./pages/Search";
 import Reading from "./pages/Reading";
 import ReadingMedia from "./pages/ReadingMedia";
 
@@ -10,7 +9,6 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/search" element={<Search/>}/>
         <Route path="/readingArea/:page/:cat/:con" element={<Reading/>} />
         <Route path="/readingMedia/:page/:src" element={<ReadingMedia/>} />
       </Routes>

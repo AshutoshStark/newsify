@@ -1,12 +1,15 @@
 import styled from 'styled-components'
 import Carousel from '../components/Carousel'
+import Layout from '../components/Layout/Layout'
 
 const Home = () => {
 
   return (
+    <Layout>
    <MainDiv>
     <Carousel/>
    </MainDiv>
+    </Layout>
   )
 }
 

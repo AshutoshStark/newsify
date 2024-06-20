@@ -22,7 +22,6 @@ const Carousel = () => {
   },[])
 
   return (
-    <Layout>
       <MainDiv>
         <div className="IntroBox">
           <div className="heading">
@@ -66,7 +65,6 @@ const Carousel = () => {
           <NewsByMedia/>
         </HeadLine>
       </MainDiv>
-    </Layout>
   )
 }
 

@@ -82,12 +82,20 @@ export const Head = styled.div`
   padding: 1rem;
   font-size: 3rem;
   font-weight: 600;
+  @media screen and (max-width: 900px){
+    font-size: 2rem;
+  }
 `
 export const Author = styled.div`
   
 `
 export const Publish = styled.div`
   font-size:1.2rem;
+  color: #636161;
+  @media screen and (max-width: 900px){
+    font-size: .8rem;
+    color: #636161;
+  }
 `
 export const Title = styled.div`
   font-size: 2rem;
@@ -96,6 +104,11 @@ export const Title = styled.div`
   font-weight: 500;
   border-top: solid #cfef00 5px;
   border-bottom: solid #cfef00 5px;
+  @media screen and (max-width: 900px){
+    border-top: solid #cfef00 3px;
+    border-bottom: solid #cfef00 3px;
+    font-size: 1.5rem;
+  }
 `
 export const ImageUrl = styled.div`
   display: flex;
@@ -119,7 +132,10 @@ export const Description = styled.div`
   p{
     margin: 1rem 3rem;
   }
-  
+  @media screen and (max-width: 900px){
+    font-size: 1rem;
+    width: 90vw;
+  }
   `
 export const Content = styled.div`
   margin: 1rem;
@@ -139,6 +155,14 @@ export const Content = styled.div`
     p{
       color: #575757;
     }
+    @media screen and (max-width: 900px){
+    font-size: .8rem;
+    width: 90vw;
+  }
+  }
+  @media screen and (max-width: 900px){
+    font-size: 1rem;
+    width: 90vw;
   }
   
 `
