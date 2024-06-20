@@ -46,7 +46,7 @@ const NewsByMedia = () => {
     <Swiper
             modules={[Autoplay,Navigation,Pagination]}
             slidesPerView={width! < 900 ? 2 : 4}
-            spaceBetween={width! < 900 ? -10 : -50}
+            spaceBetween={width! < 900 ? -10 : -40}
             className='MySwiper'
             navigation={width! < 900 ? false : true}
             >
