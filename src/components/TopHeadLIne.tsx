@@ -36,7 +36,7 @@ const TopHeadLIne = () => {
       <FiltersHead>
         TOP HEADLINES
         <select name="subject" id="" onChange={(e:any)=>updateItemAtIndex(1,e.target.value)}>
-        <option value="" hidden>Select the Country</option>
+        <option value="" hidden>Country</option>
         <option value={"in"}>
         {"India"}
         </option>
@@ -57,7 +57,7 @@ const TopHeadLIne = () => {
         </option>
     </select>
         <select name="subject" id="" onChange={(e:any)=>updateItemAtIndex(0,e.target.value)}>
-        <option value="" hidden>Select the Country</option>
+        <option value="" hidden>Category</option>
         <option value={"business"}>
         {"business"}
         </option>
@@ -96,8 +96,8 @@ const TopHeadLIne = () => {
                     <img src={item.urlToImage} alt="" />
                     <div className="details">
                     </div>
-                    {width! > 900 && <p className="card-title">{item.title}</p>}
-                    <p className="card-para">- {item.author}</p>
+                    <p className="card-title">{item.title}</p>
+                    {width! > 900 &&<p className="card-para">- {item.author}</p>}
                   </div>
                   </Container>
                     </Link>
@@ -114,8 +114,10 @@ font-size: 3rem;
 display: flex;
 gap: 1rem;
 align-items: center;
+margin: 1rem;
 @media screen and (max-width: 900px) {
   font-size: 1.5rem;
+  margin: 0 0 1rem 0;
 }
 select{
     color: #faf9f9;
@@ -137,6 +139,7 @@ select{
       width: 25vw;
       font-size: 10px;
       padding: 10px;
+      margin: 0;
     }
 }
 option{
@@ -225,20 +228,23 @@ export const Container = styled.div`
     bottom: 0px;
     @media screen and (max-width: 900px) {
       width: 35.5vw;
-      height: 100px;
+      height: 150px;
     }
   }
   .card-title{
     width: 290px;
-    position: absolute;
+    position: relative;
     bottom: 25px;
     margin: .5rem;
     @media screen and (max-width: 900px) {
       width: 35vw;
-      height: 5px;
-      margin: 0rem 0.5rem;
+      height: 5vh;
+      margin: 0rem 0rem;
       padding: 2px;
-      font-size: 15px;
+      font-size: 10px;
+      font-weight: 400;
+      overflow: hidden;
+      z-index: 3;
       }
       }
       .card-para{

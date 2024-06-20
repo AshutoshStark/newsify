@@ -31,7 +31,7 @@ const NewsByMedia = () => {
     <FiltersHead>
       COVERAGE FORM - 
       <select id="" onChange={(e:any)=>setFilter(e.target.value)}>
-      <option value="" hidden>Select the Source</option>
+      <option value="" hidden>Source</option>
        <option value={"bbc-news"}>
        {"BBC News	"}
        </option>
@@ -58,8 +58,8 @@ const NewsByMedia = () => {
                   <img src={item.urlToImage} alt="" />
                   <div className="details">
                   </div>
-                  {width! > 900 && <p className="card-title">{item.title}</p>}
-                  <p className="card-para">- {item.author}</p>
+                  <p className="card-title">{item.title}</p>
+                  {width! > 900 && <p className="card-para">- {item.author}</p>}
                 </div>
                 </Container>
                   </Link>

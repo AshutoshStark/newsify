@@ -131,10 +131,13 @@ export const Description = styled.div`
   color: #f5f5f5;
   p{
     margin: 1rem 3rem;
+    @media screen and (max-width: 900px) {
+    }
   }
   @media screen and (max-width: 900px){
     font-size: 1rem;
     width: 90vw;
+    margin: 0 0 0 -1rem;
   }
   `
 export const Content = styled.div`
@@ -146,6 +149,9 @@ export const Content = styled.div`
   color: #f5f5f5;
   p{
     margin: 0rem 3rem;
+    @media screen and (max-width: 900px) {
+      margin: 0rem 1rem;
+    }
   }
   a{
     margin: 0.5rem 3rem;
@@ -157,7 +163,8 @@ export const Content = styled.div`
     }
     @media screen and (max-width: 900px){
     font-size: .8rem;
-    width: 90vw;
+    width: 80vw;
+    margin: 0.5rem 1rem;
   }
   }
   @media screen and (max-width: 900px){
